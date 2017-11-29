@@ -1,0 +1,261 @@
+
+<! DOCTYPE html>
+<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+  <html>
+    <head>
+      <title>WWW ja Internet - 2017 v0.65</title>
+      <link href="CSS/style.css" rel="stylesheet" type="text/css">
+      
+      <script>
+       function validateForm()
+       {
+        if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value == "")
+        {
+         alert("Name must be filled out");
+          return false;
+        }
+        if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value == "")
+        {
+         alert("Phone must be filled out");
+          return false;
+        }
+        if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value == "")
+        {
+         alert("Email must be filled out");
+          return false;
+        }
+         alert("Out of stock, sorry!");
+          return false;
+       }
+      </script>
+      
+      <script>
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+
+function drag(ev)
+{
+	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+}
+
+function showPosition()
+	      {
+		if(navigator.geolocation)
+		{
+		navigator.geolocation.getCurrentPosition(showLocation)	
+		}
+		else
+		{
+		 alert("Your browser does not support geolocation!")	
+		}
+	      }
+	      
+function showLocation(position)
+	      {
+		alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);      
+	      }
+	      
+</script>
+
+<script type="application/javascript" language="javascript">
+function draw(x,y)
+{
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	ctx.save();
+	ctx.fillStyle = "rgba(0, 200, 0, 1)";
+	ctx.fillRect (x, 0, 50, 50);
+	ctx.restore();
+	x += 5;
+	var loopTimer = setTimeout('draw('+x+', '+y+')', 200);
+}
+</script>
+      </head>
+  <body>
+    <div id="wrap">
+    <div id="topbar">
+      <div id="menus">
+	      <div id="TopTitle">
+	      <img src="https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/title.png" 
+		   width="200" height="120">
+	      </div>
+        <ul id="topmenu">
+          <li class="active"><a href="#">Home</a>
+          </li>
+          <li><a href="#mainpage">Features</a></span>
+          </li>
+      <li><a href="#Buy">Buy</a>
+          </li>
+      <li><a href="#contactUs">Contact Us</a>
+      </li>
+      </ul>
+    </div>
+</div>
+	  </div>
+	  
+          <div id="header">
+	  	      <img src="https://raw.githubusercontent.com/Saku-PetteriHyt/WWW-And-Internet/master/Images/rapuranta.png" 
+		   width="1920" height="500">
+	    <div id="titlevideo">
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/sIM1nDtUUn8?rel=0" frameborder="0" allowfullscreen></iframe>
+	    </div>
+	  </div>
+	  <div id="wrap">
+   <div id="content">
+     <div id="mainpage">  
+    <br><br><br><br>
+    <h1> Welcome To The RapuRanta! </h1>
+	     
+       <h2> Features </h2>
+    <p> Catch fish and avoid crabs in this action-packed game! </p>
+	     <li> Over 0 playable heroes! </li>
+       <li> Uncountable numbers of the same enemy! </li>
+	     <li> Unoriginal soundtrack! </li>
+       <li> And not a lot more! </li>
+	    <br>
+    <img src="Images/Screenshot2.png" alt="header image" width="960" height="540"> <br>
+    <br><br><br>
+    <ul>
+    <ol>
+      <h2 id="create"> System Requirements </h2>
+      <li> CPU: Toaster or better</li>
+      <li> RAM: At least 5.9L and a 4x4</li>
+      <li> VIDEO CARD: Best performance with IntelHD </li>
+	    
+      <h2 id="Table"> Tables Of Important Stuff </h2>
+      
+      <table>
+        <caption> Awards</caption>
+        <tr>
+          <th> Award </th>
+          <th> Nominated </th>
+        </tr>
+        <tr>
+          <td> Game of The Year </td>
+          <td> No </td>
+        </tr>       
+        <tr>
+          <td> Best Narrative </td>
+          <td> No </td>
+        </tr>
+	              <tr>
+          <td> Best Art Direction </td>
+          <td> No </td>
+        </tr>
+      </table>
+      <br><br>
+            <table id="t1">
+        <caption> The RapuRanta Team </caption>
+        <tr>
+          <th> Name </th>
+          <th> Role </th>
+        </tr>
+        <tr>
+          <td> Saku-Petteri Hyttinen</td>
+          <td> Programmer </td>
+        </tr>       
+        <tr>
+          <td> Marko Kiiskinen</td>
+          <td> Programmer </td>
+        </tr>
+	<tr>
+          <td> Miro Salminen</td>
+          <td> Programmer </td>
+        </tr>       
+        <tr>
+          <td> Vertti Tuomivaara</td>
+          <td> Programmer </td>
+        </tr>
+      </table>
+      <br>
+	        <a href="http://kamk.fi/fi" target="_blank">
+    <img src="https://www.kamk.fi/loader.aspx?id=068fb45e-6dd1-4c04-b7c9-925242c2c19d" 
+	 alt= "Kamk logo"></a> <br>
+	    
+      <h2 id="contactUs"> Contact Us </h2>
+      <form>
+        First Name: <input type="text" name="fname"> <br> 
+         Last Name: <input type="text" name="lname"> <br> 
+        Gender: <br>
+        <input type="radio" name="gender" value="male" checked> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        E-mail: <input type="email" name="email"> <br>
+        
+        Salutation: <select name="salutation">
+        <option>Dr</option>
+        <option>Mr</option>
+        <option>Mrs</option>
+        <option>Miss</option>
+        <option>Ms</option>
+        </select>
+        </br><br/>
+      Subject: <select name="sport">
+        <option>Threat</option>
+        <option>Sue</option>
+        <option>Spam</option>
+        <option>Complaint</option>
+        <input type="submit" value="Submit">
+      </form>
+	    <br>
+      <h2> Get A Free Crab Plushie! </h2>
+      <form name="myForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="name" /><br/>
+        Phone: <input type="text" name="phone" /><br/>
+        Email: <input type="text" name="email" /><br/>
+        <input type="submit" value="Submit">
+      </form>
+          <br>
+	    <h2> RapuRanta HQ </h2>
+    <div id="map"></div>
+    <script>
+      function initMap()
+      {
+       var location = {lat: 64.216432, lng: 27.714823};
+        var map = new google.maps.Map(document.getElementById("map"), 
+        {
+          zoom: 14,
+          center: location
+        });
+         var marker = new google.maps.Marker({
+        position: location,
+          map: map
+      });
+      }
+    </script>
+    
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
+  type="text/javascript">
+    </script><br>
+    
+	    	    <p> If you are lost, click below to get your location</p>
+	    <button onclick="showPosition()">Click</button>
+	    <br><br>
+	    <h2> Here You Can Drag A Crab (Do Not Question It) <h2>
+<div id = "div1" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+<img id = "drag1" src = "Images/title.png" draggable = "true"
+ondragstart = "drag(event)" width = "100" height = "100">
+		    <br><br><br>
+		
+		    <h2> You Can Make Progress Here <h2>
+<button onclick="draw(0,0)"> Make Progress </button><br>
+<canvas id="canvas" width="550" height="50"></canvas>
+</ol>          
+      </div>
+       </div>
+
+     <div id="footer">
+       <p> ©2017 RapuRanta Entertainment, Inc. All rights reserved.<br>
+All trademarks referenced herein are the properties of their respective owners. </p>
+     </div>
+	      </div> 
+   </body>
+</html>
