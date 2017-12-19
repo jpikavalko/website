@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <header>
-        <title>portfolio</title>
+        <title>Games</title>
         <meta charset="utf-8/">
         <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
         <link rel="stylesheet" href="css/portfolio.css" type="text/css"/>
@@ -14,10 +14,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">About me.</a>
+                        <a href="index.html">Index</a>
                     </li>
                     <li class="active">
-                        <a href="#">Portfolio</a>
+                        <a href="#">Games</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
