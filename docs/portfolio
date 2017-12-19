@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>portfolio</title>
+        <meta charset="utf-8/">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="css/portfolio.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </header>
+    <body class="body">
+        <header class="mainheader">
+            <img src="">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">About me.</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="mainContent">
+            <div class="topContent">
+                <article class="topContentLeft">
+                    <header>
+                        <h2>CV</h2>
+                    </header>
+                    <content>
+                        <ul class="CV">
+                            <li>Creative Director of <a href="https://www.northerngamesummit.org/">Northern Game Summit</a></li>
+                            <p>What and why</p>
+                            <li>QA tester for Critical Force</li>
+                            <p>Who and Why</p>
+                            <li>Manager at Seresta Oy</li>
+                            <p>Who and Why</p>
+                            <li>Manager at Tiisiis Oy</li>
+                            <p>Who and Why</p>
+                            <li>IGDA volunteer</li>
+                            <p>Who and Why</p>
+                        </ul>
+                        <h2>Education</h2>
+                        <ul class="school">
+                            <li>Kajaani University of Applied Sciences</li>
+                            <p>Who and Why</p>
+                            <li>South-Eastern Finland University of Applied Sciences </li>
+                            <p>Who and Why</p>
+                            <li>Metropolia University of Applied Sciences</li>
+                            <p>Who and why</p>
+                            <li>The Open University</li>
+                            <p>Who and Why</p>
+                        </ul>
+                    </content>
+                </article>
+            </div>
+            <div class="topContent">
+                <aside class="topContentRight">
+                    <article>
+                        <div>
+                            <header>
+                                <h2>Games</h2>
+                            </header>
+                            <content>
+                                <iframe src="https://www.youtube.com/embed/oS_rXWE98-U" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                                <p>This GOTY was done at the Finnish Game Jam in KUAS campus.</p>
+                                <p>I did the texturing and some of the modelling work. I also did some voice over work.</p>
+                            </content>
+                        </div>
+                    </article>
+                </aside>	
+            </div>
+            <div class="bottomContent">
+                <article class="bottomContent">
+                    <header>
+                        <h2>3d modelling</h2>
+                    </header>
+                    <content>
+                        <p>Here are some of my 3d models</p>
+                        <p>I mainly work with 3ds max and substance painter 2</p>
+                        <table>
+                            <tr>
+                                <th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/1eb0c8fc60364425b5f3b171a68cbd2a/embed?camera=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+                                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                        <a href="https://sketchfab.com/models/1eb0c8fc60364425b5f3b171a68cbd2a?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Machete for school</a>
+                                        by <a href="https://sketchfab.com/TonSa?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">TonSa</a>
+                                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                                    </p>
+                                    </div>
+                                </th>
+                                <th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/eb9615c7002446068029423bdecc9918/embed?camera=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+                                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                        <a href="https://sketchfab.com/models/eb9615c7002446068029423bdecc9918?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Revolver for school</a>
+                                        by <a href="https://sketchfab.com/TonSa?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">TonSa</a>
+                                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                                    </p>
+                                    </div>
+                                </th>
+                                <th><div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/7d3973c6de1e4bada4678cc02f4538c9/embed?camera=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+                                    <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                                        <a href="https://sketchfab.com/models/7d3973c6de1e4bada4678cc02f4538c9?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Grenade for school</a>
+                                        by <a href="https://sketchfab.com/TonSa?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">TonSa</a>
+                                        on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                                    </p>
+                                    </div></th>
+                        </table>
+                    </content>
+                </article>
+            </div>
+        </div>
+        <div>
+            <footer class="mainFooter">
+                <p>Copyright 2017 &copy; Tony's webpage</p>
+            </footer>
+        </div>
+    </body>
+</html>
