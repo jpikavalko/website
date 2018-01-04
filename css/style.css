@@ -1,0 +1,155 @@
+
+
+body{
+background:red url(../images/universe.jpg);
+background-repeat: repeat-x;
+background-position: -100px;	
+}
+
+a{
+	color: #00FFFF;
+}
+
+/* WRAP 
+wrap is the main block for the page*/
+#wrap {
+
+	width:720px;
+	margin:0px auto 15px auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+
+}
+
+#wrap h1 {
+	font-size: 24px;
+	text-align: center;
+	color: #B52E10;
+}
+
+/* Header */
+#header {
+	height:242px;
+	background:url(../image/universe.jpg) no-repeat left top;
+	clear: both;
+
+}
+
+/*Top bar */
+
+#topbar {
+	height:62px;
+	background-color:#000000;
+}
+
+/*Header Menu*/
+#topmenu {
+	display:block;
+	list-style:none;
+	padding:1px 0px 0px 10px; /* top bottom right left ?*/
+	float: left;
+	width: 515px;
+}
+
+#topmenu li {
+	display:inline;
+}
+
+#topmenu a {
+	display:block;
+	float:left;
+	height:28px;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+	padding: 9px 15px 0px 15px;
+	text-align:center;
+}
+
+#topmenu a, #topmenu a:visited, #topmenu a: active{
+	color: #FFFFFF;
+}
+
+#topmenu a:hover{
+	color:#FFFFFF;
+	background-color: #B52E10;
+}
+
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+	color:#FFFFFF;
+	background-color: #B32D0F;
+}
+
+/*Content */
+#content{
+	background-color: #FFFFFF;
+}
+
+#mainpage {
+	width: 700px;
+	float: left;
+	padding: 5px 5px 5px 0px;
+	height:auto
+}
+
+#mainpage p{
+	line-height: 22px;
+	margin: 10px 0px 22px 0px;
+}
+
+#mainpage blockquote {
+	background: #efefef;
+	display:block;
+	margin: 5px;
+	font:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+}
+
+h1,h2,h3,h4,h5{
+	color:#B32C0E;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#mainpage h1 {
+	font-size: 24px;
+	text-align: center;
+	color: #F2F7F3;
+}
+
+#mainpage h2 {
+	font-size:18px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B52E10;
+}
+
+#mainpage h3 {
+	font-size: 20px;
+}
+#mainpage h4 {
+	font-size: 18px;
+}
+#mainpage h5 {
+	font-size: 16px;
+}
+
+#footer {
+	height:24px;
+	padding-left: 10px;
+	color:#FFFFFF;
+	background-color:#000000;
+}
+
+
+
+
+
+
+
+
+
+
+
