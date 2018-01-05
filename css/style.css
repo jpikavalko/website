@@ -10,6 +10,35 @@ a{
 	color: #00FFFF;
 }
 
+
+/* TABLES */
+
+table {
+	background-color: #F2F7F3;
+	border-width: 100%;
+	border:1px solid #000000;
+	border-collapse: collapse;
+}
+
+th, td {
+	border:1px solid #000000;
+	text-align: left;
+}
+
+caption {
+	background-color: #F2F7F3;
+	border-width: 100%;
+	border:1px solid #000000;
+}
+
+table#t1 {
+	width: 75%;
+}
+
+table#t2 {
+	width: 90%;
+}
+
 /* WRAP 
 wrap is the main block for the page*/
 #wrap {
@@ -41,6 +70,30 @@ wrap is the main block for the page*/
 #topbar {
 	height:62px;
 	background-color:#000000;
+	position:fixed;
+}
+
+/*Left side Menu*/
+#leftmenu {
+	display:block;
+	list-style:none;
+	padding:1px 0px 0px 10px; /* top bottom right left ?*/
+	float: left;
+	width: 200px;
+}
+
+#leftmenu li {
+	display:inline;
+}
+
+#leftmenu a {
+	display:block;
+	float:left;
+	height:28px;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+	padding: 9px 15px 0px 15px;
+	text-align:center;
 }
 
 /*Header Menu*/
@@ -136,6 +189,7 @@ h1,h2,h3,h4,h5{
 	font-size: 16px;
 }
 
+/*FOOTER */
 #footer {
 	height:24px;
 	padding-left: 10px;
