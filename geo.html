@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>PAGE OF WEB TIME CONTINUUM</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script>
+		function showPosition()
+	      {
+		if(navigator.geolocation)
+		{
+		navigator.geolocation.getCurrentPosition(showLocation)	
+		}
+		else
+		{
+		 alert("Your browser does not support geolocation!")	
+		}
+	      }
+	      
+		function showLocation(position)
+	      {
+		alert("Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude);      
+	      }
+		  </script>
+	</head>
+	
+	<body>
+		<div id="wrap">
+			<h1> PAGE OF WEB TIME CONTINUUM </h1>
+			
+			<div id="topbar">
+				<div id="menus">
+					<ul id="topmenu">
+
+						<li><a href ="index.html">Home</a>
+						</li>
+						
+						<li><a href ="#stories">Stories</a>
+						</li>
+						
+						<li><a href ="#contact">Contact Me</a>
+						</li>
+						
+						<li><a href ="#table">Table</a>
+						</li>
+					
+						<li><a href ="geo.html">Geo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="content">
+				<div id="mainpage">
+				
+					<div id="map"></div>
+					<script>
+					function initMap()
+					{
+						var location = {lat: 64.216432, lng: 27.714823};
+						var map = new google.maps.Map(document.getElementById("map"), 
+						{
+							zoom: 12,
+							center: location
+						});
+						var marker = new google.maps.Marker(
+						{
+							position: location,
+							map: map
+						});
+					}
+					</script>
+    
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2E0xr4M-KPPqzdqC-wCHAN3oPyH37l5I &callback=initMap"
+						type="text/javascript">
+					</script><br>
+    
+					<p> Click to reset position</p>
+					<button onclick="showPosition()">Click</button>
+
+					<div id="footer">
+						<p>Copyright 2017 &copy Jukka Ikävalko </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 
