@@ -5,6 +5,12 @@ window.onload = function()
         width = canvas.width = window.innerWidth,
         height = canvas.height = window.innerHeight;
 
+    //triangle;
+    // context.beginPath();
+    // context.moveTo(75, 50);
+    // context.lineTo(100, 75);
+    // context.lineTo(100, 25);
+    // context.fill();
         
     for (var i = 0; i < 100; i += 1){
         context.beginPath();
