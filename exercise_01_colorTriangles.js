@@ -5,14 +5,10 @@ window.onload = function()
         width = canvas.width = window.innerWidth,
         height = canvas.height = window.innerHeight;
 
-        var colors = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 
-        'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 
-        'silver', 'teal', 'white', 'yellow'];
-        
+    var triangleCount = 2500;
 
-        
-
-    for (var i = 0; i < 20; i += 1){
+    for (var i = 0; i < triangleCount; i += 1)
+    {
         // Begin path
         context.beginPath();
 
@@ -20,19 +16,20 @@ window.onload = function()
         var x = Math.random() * width;
         var y = Math.random() * height;
 
-        // Option A: Randomize number for color randomization
-        // var a = Math.floor((Math.random() * colors.length));
-
-        // Option B: Randomize number for color randomization
+        // Randomize number for color randomization
         var rgb = [];
-        for (var ii = 0; ii < 3; ii++){
-            rgb.push(Math.floor(Math.random() * 255));
-        }
+        //for (var ii = 0; ii < 3; ii++){
+        rgb.push(Math.floor((x / width) * 255));
+        rgb.push(Math.floor((y / height) * 255));
+        rgb.push(Math.floor(Math.random() * 255));
+
+        console.log(Math.floor(x / width) * 255 + " " + Math.floor(y / height) * 255)
+        //}
 
         // First point
         context.moveTo(x,y);
-        context.lineTo(Math.random() * width, Math.random() * height);
-        context.lineTo(Math.random() * width, Math.random() * height);
+        context.lineTo(x + (Math.random() * 50) - 25, y + (Math.random() * 50) - 25);
+        context.lineTo(x + (Math.random() * 50) - 25, y + (Math.random() * 50) - 25);
         // Last point (= first point coordinates)
         context.lineTo(x, y);
 
@@ -43,4 +40,8 @@ window.onload = function()
         // Draw outlines
         context.stroke();
     }
+}
+
+function normalizeValue(value, min, max){
+    return (value - min) / (max - min);
 }
