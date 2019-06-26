@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<html>
+	<head>
+		<title>PAGE OF WEB TIME CONTINUUM</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+		<script>
+			
+			function validateForm(){
+			if (document.forms["myForm"]["name"]value==null || document.forms["myForm"]["name"]value==""){
+				alert("Name must be filled out");
+				return false;
+				}
+				return true;
+			}
+		</script>
+	
+	</head>
+	
+	<body>
+		<div id="wrap">
+			<h1> PAGE OF WEB TIME CONTINUUM </h1>
+			
+			<div id="topbar">
+				<div id="menus">
+					<ul id="topmenu">
+
+					<li class ="active"><a href ="#">Home</a>
+					</li>
+					
+					<li><a href ="#stories">Stories</a>
+					</li>
+					
+					<li><a href ="#contact">Contact Me</a>
+					</li>
+					
+					<li><a href ="#table">Table</a>
+					</li>
+					
+					<li><a href ="geo.html">Geo</a>
+					</li>
+					
+					</ul>
+				</div>
+			</div>
+
+			<h2 id="stories"> Stories </h2>
+			
+				<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/ZSfFHxyYJJA"
+				frameborder="0"
+				gesture="media"
+				allow="encrypted-media" allowfullscreen></iframe>
+			
+			<h2 id="contact"> Contact </h2>
+			
+				<form name="myForm" onsubmit ="return validateForm()">
+				
+					Your name:
+					<input type="text" name="name"> <br>
+					Your age:
+					<input type="text" name="age"> <br>
+					E-mail:
+					<input type="email" name="email"> <br>
+					
+					<input type="radio" name="gender" value="male" checked> Male<br>   
+					<input type="radio" name="gender" value="female"> Female<br>
+					<input type="radio" name="gender" value="other"> Other <br>
+					 
+					<input type="submit" value="Submit">
+					<input type="reset"> <br>
+				
+				</form>
+			
+			<p><p>
+			
+
+			
+			<h2 id="table"> Table</h2>
+
+			<table id="t1">
+			<caption> Position of my ears in order.</caption>
+				<tr>
+					<th colspan="1"> Left ear's position </th>
+					<th> Right ear's position </th>
+					<th> Where it shouldn't be </th>
+				</tr>
+				
+				<tr>
+					<td> Left </td>
+					<td> Right </td>
+					<td> right </td>
+				</tr>
+				<tr>
+					<td> Right </td>
+					<td> Left </td>
+					<td> left </td>
+				</tr>
+
+			</table>
+			<br>
+			
+			<table id="t2">
+			<caption> Position of my ears in order.</caption>
+				<tr>
+					<th colspan="1"> Left ear's position </th>
+					<th> Right ear's position </th>
+					<th> Where it shouldn't be </th>
+				</tr>
+				
+				<tr>
+					<td> Left </td>
+					<td> Right </td>
+					<td> right </td>
+				</tr>
+				<tr>
+					<td> Right </td>
+					<td> Left </td>
+					<td> left </td>
+				</tr>
+
+			</table>
+			
+			<!--
+			<div id="header">
+			
+			</div>
+			-->
+			<div id="content">
+				<div id="mainpage">
+				
+					<p>PLÄÄ PLÄÄ</p>
+
+					<a href="http://asp.kajak.fi:88/v8/kalenterit2/" target = "blank"> ASIO CALENDAR (password) </a> ||
+					<a href="http://turotarjoo.com/ruokaa" target = "blank"> SCHOOL MENU </a>
+					
+					<h3> List of ears I have </h3>
+					<ul>
+						<li> left ear </li>
+						<li> right ear </li>
+					</ul>
+					
+					<h3> Another list of ears I have in reverse order </h3>
+					<ol>
+						<li> right ear </li>
+						<li> left ear (most of the time) </li>
+					</ol>
+					
+					<br>
+					<img src="https://i.imgur.com/FjeLbo3.jpg" alt="universe_imgur" width = "200" height="200">
+					<img src="images/universe.jpg" alt="universe_repo" width = "200" height="200">
+					
+					<div id="footer">
+						<p>Copyright 2017 &copy Jukka Ikävalko </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html> 
