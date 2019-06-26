@@ -45,7 +45,7 @@ window.onload = function()
         context.lineTo(x0, y0);
 
         // Select color for triangle and fill it
-        context.fillStyle = 'rgb('+ rgb.join(',') +')'; 
+        context.fillStyle = 'rgb('+ rgbR + ','+ rgbG +','+ rgbB +')'; 
         context.fill();
 
         // Draw outlines
