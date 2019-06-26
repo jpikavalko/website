@@ -8,9 +8,10 @@ window.onload = function () {
     var coords = [];
     var rgb = [];
     var speeds = [];
+    var middlePoints = [];
     var triangleSize = 100;
     var halfSize = triangleSize / 2;
-
+    
     // for (var omg = 0; omg < triangleCount; omg++){
     //     createTriangles();
     // }
@@ -27,12 +28,13 @@ window.onload = function () {
         //Create Points
         var x0 = Math.random() * width,
             y0 = -100, 
-            x1 = (Math.random() * triangleSize) - halfSize,
-            y1 = (Math.random() * triangleSize) - halfSize,
-            x2 = (Math.random() * triangleSize) - halfSize,
-            y2 = (Math.random() * triangleSize) - halfSize;
+            x1 = calculateCoordinatesBySpeed(speed),
+            y1 = calculateCoordinatesBySpeed(speed),
+            x2 = calculateCoordinatesBySpeed(speed),
+            y2 = calculateCoordinatesBySpeed(speed);
 
-        console.log(y0);
+        middlePoints.push((x0 + x1 + x2) / 3);
+        middlePoints.push((y0 + y1 + y2) / 3);
 
         coords.push(x0);
         coords.push(y0);
@@ -72,6 +74,7 @@ window.onload = function () {
 
         context.clearRect(0, 0, width, height);
         i++;
+
         console.log(i + " " + triangleCount);
         for (var iter = 0; iter < triangleCount; iter++) 
         {
@@ -83,9 +86,9 @@ window.onload = function () {
                 y2 = coords[iter*6+5];
 
 
-            var rgbR = rgb[iter*3+0],
-                rgbG = rgb[iter*3+1],
-                rgbB = rgb[iter*3+2]+=0.1;
+            var rgbR = rgb[iter*3+0]+=speeds[iter]*0.2,
+                rgbG = rgb[iter*3+1]+=speeds[iter]*0.2,
+                rgbB = rgb[iter*3+2]+=speeds[iter]*0.2;
 
             // Begin path
             context.beginPath();
@@ -105,5 +108,10 @@ window.onload = function () {
         }
 
         requestAnimationFrame(updateTriangles);
+    }
+
+    function calculateCoordinatesBySpeed(speedo){
+        newSpeed = (Math.random() * triangleSize) - halfSize;
+        return newSpeed *speedo + 0.6;
     }
 }
