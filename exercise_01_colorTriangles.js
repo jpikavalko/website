@@ -18,30 +18,23 @@ window.onload = function()
 
         // Randomize number for color randomization
         var rgb = [];
-        //for (var ii = 0; ii < 3; ii++){
         rgb.push(Math.floor((x / width) * 255));
         rgb.push(Math.floor((y / height) * 255));
         rgb.push(Math.floor(Math.random() * 255));
-
-        console.log(Math.floor(x / width) * 255 + " " + Math.floor(y / height) * 255)
-        //}
 
         // First point
         context.moveTo(x,y);
         context.lineTo(x + (Math.random() * 50) - 25, y + (Math.random() * 50) - 25);
         context.lineTo(x + (Math.random() * 50) - 25, y + (Math.random() * 50) - 25);
+
         // Last point (= first point coordinates)
         context.lineTo(x, y);
 
         // Select color for triangle and fill it
-        context.fillStyle = 'rgb('+ rgb.join(',') +')'; // Option A: colors[a];
+        context.fillStyle = 'rgb('+ rgb.join(',') +')'; 
         context.fill();
 
         // Draw outlines
         context.stroke();
     }
-}
-
-function normalizeValue(value, min, max){
-    return (value - min) / (max - min);
 }
