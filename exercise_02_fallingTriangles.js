@@ -42,7 +42,7 @@ window.onload = function () {
         coords.push(y1);
         coords.push(x2);
         coords.push(y2);
-
+        
         var rgbR = Math.floor((x0 / width) * 255),
             rgbG = Math.floor((y0 / height) * 255),
             rgbB = Math.floor(Math.random() * 50);
@@ -50,7 +50,7 @@ window.onload = function () {
         rgb.push(rgbR);
         rgb.push(rgbG);
         rgb.push(rgbB);
-
+        
         // Begin path
         context.beginPath();
 
@@ -66,7 +66,6 @@ window.onload = function () {
 
         // Draw outlines
         context.stroke();
-        console.log("Eka");
     }
 
     var i = 0;
@@ -75,7 +74,6 @@ window.onload = function () {
         context.clearRect(0, 0, width, height);
         i++;
 
-        console.log(i + " " + triangleCount);
         for (var iter = 0; iter < triangleCount; iter++) 
         {
             var x0 = coords[iter*6+0],
