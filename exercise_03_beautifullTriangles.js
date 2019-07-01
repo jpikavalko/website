@@ -16,9 +16,15 @@ window.onload = function () {
         ColorR, ColorG, ColorB, ColorA,
         area, rotationSpeed, fallingSpeed;
 
+    var arrowX, arrowY, dx,dy, angle;
+
     setInterval(CreateTriangle, 50);
-    
+    //setInterval(ShowTriangleCount, 1000);
     UpdateTriangles();
+
+    function ShowTriangleCount(){
+        console.log(triangleCount);
+    }
 
     function CreateTriangle()
     {
@@ -55,7 +61,7 @@ window.onload = function () {
         // Calculate triangle area and rotation- and falling speeds
         area = AreaOfTriangle(Ax, Ay, Bx, By, Cx, Cy);
         rotationSpeed = area / 20000 * (Math.random() - 0.5) ;
-        fallingSpeed = area / 1000;
+        fallingSpeed = area / 100;
 
         // Assings variables to object and add said object to triangles array
         var triangle = {oAx: Ax, oAy:Ay, oBx:Bx, oBy:By, oCx:Cx, oCy:Cy, oDx:Dx, oDy:Dy, oaAngle: aAngle, obAngle: bAngle, ocAngle:cAngle, oaRadius:aRadius, obRadius:bRadius, ocRadius:cRadius, oArea:area, oRotSpeed:rotationSpeed, oFallSpeed: fallingSpeed, oColorR:ColorR, oColorG:ColorG, oColorB:ColorB, oColorA:ColorA};
@@ -92,15 +98,25 @@ window.onload = function () {
             triangles[i].obAngle += triangles[i].oRotSpeed;
             triangles[i].ocAngle += triangles[i].oRotSpeed;
 
-            triangles[i].oDy += triangles[i].oFallSpeed;
+            triangles[i].oDx += dx/100 *triangles[i].oFallSpeed;
+            triangles[i].oDy += dy/100 *triangles[i].oFallSpeed;
+
             triangles[i].oColorR += 0.01;
             triangles[i].oColorG += 0.01;
-            triangles[i].oColorB += 0.01;
+            triangles[i].oColorB += 0.01; 
         }
         
         // Update frames
         requestAnimationFrame(UpdateTriangles);
     }
+
+    document.body.addEventListener("mousemove", function(event)
+    {
+        dx = event.clientX - width / 2;
+        dy = event.clientY - height / 2;
+        angle = Math.atan2(dy , dx);
+        console.log (dx + " " + dy + " " + angle);
+    });
 
     // Calculate Area of Triangle (in pixels);
     function AreaOfTriangle(x1, y1, x2, y2, x3, y3){
