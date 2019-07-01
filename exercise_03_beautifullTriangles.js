@@ -16,7 +16,8 @@ window.onload = function () {
         ColorR, ColorG, ColorB, ColorA,
         area, rotationSpeed, fallingSpeed;
 
-    var arrowX, arrowY, dx,dy, angle;
+    var dx = 0;
+    var dy = 100;
 
     setInterval(CreateTriangle, 50);
     //setInterval(ShowTriangleCount, 1000);
@@ -114,8 +115,6 @@ window.onload = function () {
     {
         dx = event.clientX - width / 2;
         dy = event.clientY - height / 2;
-        angle = Math.atan2(dy , dx);
-        console.log (dx + " " + dy + " " + angle);
     });
 
     // Calculate Area of Triangle (in pixels);
