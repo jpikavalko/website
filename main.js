@@ -1,0 +1,1 @@
+var v1 = vector.create(10, 0);
