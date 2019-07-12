@@ -13,13 +13,14 @@ window.onload = function() {
     var sun = particle.create(width / 2, height / 2, 0, 0);
         
 
-    var planets = [];
+    var planets = [],
+        planetCount = 1000,
         planetColors = [],
         cR = 50,
         cB = 100,
         cG = 200;
 
-    for (var i = 0; i < 10; i++){
+    for (var i = 0; i < planetCount; i++){
         var planet = particle.create(width / 2 + Math.random()*300 + 100, height / 2, 10, -Math.PI / 2);
         planets[i] = planet;
        
@@ -37,7 +38,7 @@ window.onload = function() {
     function update()
     {
 		context.clearRect(0, 0, width, height);
-        for (var i = 0; i < 10; i++){
+        for (var i = 0; i < planetCount; i++){
             planets[i].gravitateTo(sun);
             planets[i].update();
         }
@@ -46,7 +47,7 @@ window.onload = function() {
         context.arc(sun.position.getX(), sun.position.getY(), 20, 0, Math.PI * 2, false);
         context.fill();
 
-        for (var i = 0; i < 10; i++){
+        for (var i = 0; i < planetCount; i++){
             context.beginPath();
             context.fillStyle = 'rgb(' + planetColors[i].colR + ',' + planetColors[i].colB + ',' + planetColors[i].colG + ')';
             context.arc(planets[i].position.getX(), planets[i].position.getY(), 5, 0, Math.PI * 2, false);
