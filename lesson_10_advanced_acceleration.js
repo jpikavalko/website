@@ -96,11 +96,13 @@ window.onload = function() {
         context.lineTo(-10, -7);
         context.lineTo(-10, 7);
         context.lineTo(10, 0);
+
         if (thrusting){
             context.moveTo(-10, -2);
             context.lineTo(-15, 0);
             context.lineTo(-10, 2);
         }
+        
         context.stroke();
 
         context.restore();
